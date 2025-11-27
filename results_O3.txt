@@ -1,0 +1,68 @@
+Merge lab (variant: merge)
+
+=====================================
+N = 100000
+Data generated
+merge (no policy): 3.4092 ms
+merge (seq):       4.1955 ms
+merge (par):       3.9693 ms
+merge (par_unseq): 3.8950 ms
+
+
+=====================================
+N = 500000
+Data generated
+merge (no policy): 16.4317 ms
+merge (seq):       21.6785 ms
+merge (par):       20.2032 ms
+merge (par_unseq): 20.1443 ms
+
+
+=====================================
+N = 1000000
+Data generated
+merge (no policy): 33.2790 ms
+merge (seq):       40.5352 ms
+merge (par):       42.2056 ms
+merge (par_unseq): 40.8269 ms
+
+
+=====================================
+N = 5000000
+Data generated
+merge (no policy): 145.0627 ms
+merge (seq):       192.3007 ms
+merge (par):       191.3744 ms
+merge (par_unseq): 185.2979 ms
+
+Hardware threads: 12
+Custom parallel merge (K vs time) for N = 5000000:
+K	Time (ms)
+1	193.1738
+2	191.5988
+3	242.1792
+4	325.4438
+5	310.2101
+6	362.7238
+7	466.5055
+8	512.4680
+9	547.3396
+10	604.0447
+11	681.7856
+12	746.4070
+13	908.0605
+14	917.6734
+15	948.5125
+16	987.7997
+17	1078.6087
+18	1111.9010
+19	1142.4753
+20	1209.1084
+21	1285.1141
+22	1326.5995
+23	1467.7827
+24	1515.5027
+
+Best K = 2, best time = 191.5988 ms
+K / hardware_threads = 0.1667
+
